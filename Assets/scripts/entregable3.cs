@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class entregable3 : MonoBehaviour
@@ -98,12 +99,15 @@ public class entregable3 : MonoBehaviour
 
         //ejercicio 3
 
+        /*
+        if (primera variable % segunda variable == 0 )
+
+else no es divisible
 
 
+        */
 
 
-
-        
         //ejercicio 4
 
         if (A)

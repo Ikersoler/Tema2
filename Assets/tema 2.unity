@@ -162,6 +162,15 @@ MonoBehaviour:
   i: 0
   o: 0
   u: 0
+  intnum1: 0
+  intnum2: 0
+  A: 0
+  B: 0
+  C: 0
+  D: 0
+  dias: 33
+  mes: 12
+  "a\xF1o": 0
 --- !u!135 &961203643
 SphereCollider:
   m_ObjectHideFlags: 0
