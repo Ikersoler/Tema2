@@ -162,8 +162,8 @@ MonoBehaviour:
   i: 0
   o: 0
   u: 0
-  intnum1: 0
-  intnum2: 0
+  intnum1: 2
+  intnum2: 1
   A: 0
   B: 0
   C: 0
@@ -171,6 +171,16 @@ MonoBehaviour:
   dias: 33
   mes: 12
   "a\xF1o": 0
+  lunes: 0
+  martes: 0
+  miercoles: 0
+  jueves: 0
+  viernes: 0
+  edad: 0
+  menbresia: 
+  angulo1: 0
+  angulo2: 0
+  angulo3: 0
 --- !u!135 &961203643
 SphereCollider:
   m_ObjectHideFlags: 0

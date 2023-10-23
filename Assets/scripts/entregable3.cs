@@ -52,6 +52,10 @@ public class entregable3 : MonoBehaviour
     [SerializeField] private int edad;
     [SerializeField] private string menbresia;
     //ejercicio 10
+    [SerializeField] private float angulo1;
+    [SerializeField] private float angulo2;
+    [SerializeField] private float angulo3;
+
 
     // Start is called before the first frame update
     void Start()
@@ -98,14 +102,15 @@ public class entregable3 : MonoBehaviour
         }
 
         //ejercicio 3
+        if (intnum1 % intnum2 == 0)
+        {
+            Debug.Log(message: $"{intnum1} es divisible entre {intnum2}");
+        }
+        else
+        {
+            Debug.Log(message: $"{intnum1} NO es divisible entre {intnum2}");
 
-        /*
-        if (primera variable % segunda variable == 0 )
-
-else no es divisible
-
-
-        */
+        }
 
 
         //ejercicio 4
@@ -337,12 +342,129 @@ else no es divisible
         }
         //ejercicio 7---------------------------------------------------------------------horoscopo
 
-        if (mes == 1)
+        if (mes == 1 && dias >=1 && dias < 20)
         {
-            if (dias >=  && dias <= ) 
-            {
-                Debug.Log();
-            }
+            Debug.Log(message: $"tu horoscopo sehun el mes es capricornio");
+        }
+        else if (mes == 1 && dias >= 20 && dias < 32)
+        {
+            Debug.Log(message: $"tu horoscopo sehun el mes es acuario ");
+
+        }
+        else if (mes == 2 && dias >= 1 && dias < 19)
+        {
+            Debug.Log(message: $"tu horoscopo sehun el mes es acuario ");
+
+        }
+        else if (mes == 2 && dias >= 19 && dias < 29)
+        {
+            Debug.Log(message: $"tu horoscopo sehun el mes es piscis ");
+
+        }
+        else if (mes == 3 && dias >= 1 && dias < 21)
+        {
+            Debug.Log(message: $"tu horoscopo sehun el mes es piscis ");
+
+        }
+        else if (mes == 3 && dias >= 21 && dias < 32)
+        {
+            Debug.Log(message: $"tu horoscopo sehun el mes es aries ");
+
+        }
+        else if (mes == 4 && dias >= 1 && dias < 20)
+        {
+            Debug.Log(message: $"tu horoscopo sehun el mes es aries ");
+
+        }
+        else if (mes == 4 && dias >= 21 && dias < 31)
+        {
+            Debug.Log(message: $"tu horoscopo sehun el mes es tauro ");
+
+        }
+        else if (mes == 5 && dias >= 1 && dias < 21)
+        {
+            Debug.Log(message: $"tu horoscopo sehun el mes es tauro ");
+
+        }
+        else if (mes == 5 && dias >= 21 && dias < 32)
+        {
+            Debug.Log(message: $"tu horoscopo sehun el mes es geminis ");
+
+        }
+        else if (mes == 6 && dias >= 1 && dias < 21)
+        {
+            Debug.Log(message: $"tu horoscopo sehun el mes es geminis ");
+
+        }
+        else if (mes == 6  && dias >= 21 && dias < 31)
+        {
+            Debug.Log(message: $"tu horoscopo sehun el mes es cancer ");
+
+        }
+        else if (mes == 7 && dias >= 1 && dias < 23)
+        {
+            Debug.Log(message: $"tu horoscopo sehun el mes es cancer ");
+
+        }
+        else if (mes == 7 && dias >= 23 && dias < 27)
+        {
+            Debug.Log(message: $"tu horoscopo sehun el mes es leo ");
+
+        }
+        else if (mes == 8 && dias >= 1 && dias < 23)
+        {
+            Debug.Log(message: $"tu horoscopo sehun el mes es leo ");
+
+        }
+        else if (mes == 8 && dias >= 23 && dias < 32)
+        {
+            Debug.Log(message: $"tu horoscopo sehun el mes es virgo ");
+
+        }
+        else if (mes == 9 && dias >= 1 && dias < 23)
+        {
+            Debug.Log(message: $"tu horoscopo sehun el mes es virgo ");
+
+        }
+        else if (mes == 9 && dias >= 23 && dias < 31)
+        {
+            Debug.Log(message: $"tu horoscopo sehun el mes es libra ");
+
+        }
+        else if (mes == 10 && dias >= 1 && dias < 20)
+        {
+            Debug.Log(message: $"tu horoscopo sehun el mes es libra ");
+
+        }
+        else if (mes == 10 && dias >= 23 && dias < 32)
+        {
+            Debug.Log(message: $"tu horoscopo sehun el mes es escorpio ");
+
+        }
+        else if (mes == 11 && dias >= 1 && dias < 22)
+        {
+            Debug.Log(message: $"tu horoscopo sehun el mes es escorpio ");
+
+        }
+        else if (mes == 11 && dias >= 22 && dias < 31)
+        {
+            Debug.Log(message: $"tu horoscopo sehun el mes es sagitario ");
+
+        }
+        else if (mes == 12 && dias >= 1 && dias < 22)
+        {
+            Debug.Log(message: $"tu horoscopo sehun el mes es aries ");
+
+        }
+        else if (mes == 12 && dias >= 22 && dias < 32)
+        {
+            Debug.Log(message: $"tu horoscopo sehun el mes es capricornio ");
+
+        }
+        else
+        {
+            Debug.Log(message: "no crees en el horoscopo");
+
         }
 
         //ejercicio 8
@@ -375,16 +497,55 @@ else no es divisible
 
         //ejercicio 9
 
-        if (edad == 65 )
+        if(edad>=18 && edad < 65)
         {
-            
+            if (menbresia == "gold")
+            {
+                Debug.Log(message: $"tienes un descuento de 75%");
+            }
+            if (menbresia == "silver")
+            {
+                Debug.Log(message: $"tienes un descuento de 50%");
+            }
+
+            if (menbresia == "bronze")
+            {
+                Debug.Log(message: $"tienes un descuento de 25%");
+            }
         }
+        else if (edad > 65)
+        {
+            if (menbresia == "gold")
+            {
+                Debug.Log(message: $"tienes un descuento de 50%");
+            }
+            if (menbresia == "silver")
+            {
+                Debug.Log(message: $"tienes un descuento de 25%");
+            }
+
+            if (menbresia == "bronze")
+            {
+                Debug.Log(message: $"tienes un descuento de 15%");
+            }
+        }
+        else if(edad < 18)
+        {
+            Debug.Log(message: $"no puedes comprar en esta tienda porque heres menor");
+        }
+
 
 
         //ejercicio 10
 
-
-
+        if (angulo1 + angulo2 + angulo3 == 180)
+        {
+            Debug.Log(message:"la suma de estos angulos puedens ser los angulos internos de un triangulo");
+        }
+        else if (angulo1 + angulo2 + angulo3 == 180)
+        {
+            Debug.Log(message: "la suma de estos angulos NO puedens ser los angulos internos de un triangulo");
+        }
 
 
     }
